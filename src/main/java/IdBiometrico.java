@@ -1,0 +1,18 @@
+public class IdBiometrico implements Usuario{
+    public boolean id;
+    public IdBiometrico(boolean id){
+
+    }
+    @Override
+    public boolean validar(boolean id) {
+        if(id){
+            this.id=true;
+            return true;
+        } else {
+            this.id=false;
+            return false;
+        }
+
+    }
+
+}
